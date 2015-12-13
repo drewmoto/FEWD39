@@ -1,0 +1,36 @@
+
+body {
+    background-color: grey;
+    color: white;
+}
+.container  {
+  border: #CCCCCC 4px solid;
+  width: 600px;
+  padding: 40px;
+  margin: 20px auto;
+}
+li {
+  list-style-type: none;
+  display: inline;
+}
+h1 {
+  text-align: center;
+}
+.txt-center {
+    text-align: center;
+}
+.divider {
+  border: 1px #CCCCCC solid;
+}
+.socialnet {
+display: inline;
+color: #57C2B3;
+}
+.bullet {
+  list-style-type: square;
+}
+img {
+border: 1px #CCCCCC solid;
+padding: 5px;
+float: right;
+}
