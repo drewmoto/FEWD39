@@ -1,0 +1,33 @@
+
+/*.parentbox {
+  width: 90%;
+  border: 5px;
+  float:left;*/
+
+.col-6 {
+  border: black solid 1px;
+  background-color: black;
+  color: white;
+  width: 16.666%;
+  height: 50px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.TopLeftList {
+display:inline-block;
+}
+
+.container {
+
+
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+
+.divider {
+  border: 1px #CCCCCC solid;
+}
