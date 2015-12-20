@@ -1,0 +1,31 @@
+#selected-plays {
+    background-color: gray;
+}
+
+.large-title {
+  font-size: 20px;
+}
+
+.large-title {
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+ table td:nth-child(3){
+    background-color: grey;
+}
+ #selected-plays > li li {
+    color: red;
+  }
+
+/*.clear-after li:first-child {
+    font-size: 40px;
+}*/
+
+/*.container div:last-child {
+    background-color:green;
+}
+
+.container div:nth-child(2) {
+    background-color:orange;
+}*/
