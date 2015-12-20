@@ -11,12 +11,26 @@
   padding-bottom: 15px;
 }
 
- table td:nth-child(3){
+ table td:nth-child(3) {
     background-color: grey;
 }
+
  #selected-plays > li li {
     color: red;
   }
+
+table tr:nth-child(odd) {
+  background-color: grey;
+}
+
+a[href$=".pdf"] {
+  color:blue;
+  font-size:2em;
+}
+
+a[href*="asyoulikeit"] {
+  color:orange;
+
 
 /*.clear-after li:first-child {
     font-size: 40px;
