@@ -10,6 +10,8 @@ body {
   margin-bottom: 20px;
 }*/
 
+
+/*solid black line break in the content*/
 hr {
   color: black;
   background-color: black;
@@ -90,6 +92,15 @@ a:hover {
 #bros {
   width: 90%
 }
+
+.firstLetter {
+    font-size: 5em;
+    line-height: 1;
+    color: #999;
+    margin: -.1em .1em 0 -.1em;
+    vertical-align: text-bottom;
+    float: left;
+  }
 
 /*ID identifying the right content area */
 aside{
