@@ -1,3 +1,46 @@
-body {
-    background-color: black
-}
+header {
+    text-align: center;
+    background: url("gg-bridge.jpg");
+    background-size: cover;
+    color: white;
+  }
+  a {
+    color: white;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  img {
+    margin: 40px 0px 0px 0px;
+    border: 7px solid white;
+    border-radius:20px;
+    max-width: 300px;
+    max-width: 300px;
+  }
+  ul {
+    padding: 10px;
+    background: rgba(0,0,0,0.5);
+  }
+  .homework {
+    color: black;
+    background-color: gray;
+  }
+  .aboutme {
+    display: inline;
+    font-size: 25px;
+    padding: 0px 10px 0px 10px;
+        }
+    article {
+        max-width: 1000px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+          font-size: 36px;
+      }
+      li {
+          display: block;
+          padding: 5px;
+      }
+    }
