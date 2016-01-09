@@ -2,12 +2,12 @@ header {
     text-align: center;
     background: url("gg-bridge.jpg");
     background-size: cover;
-    color: rgb(63, 57, 51);
+    color: rgb(229, 41, 0);
   }
 body {
   background-image: url("lights.jpg");
   background-size: 100% 100%;
-  padding: inherit;
+  /*padding: 5px 1px 1px 1px;*/
   background-repeat: no-repeat;
 }
 
@@ -52,12 +52,6 @@ a, a:active, a:visited {
 a:hover{
   color:orange;
 }
-
-  article {
-        /*max-width: 1000px;*/
-        padding: 20px;
-        margin: 0 auto;
-    }
 
     #leftbox {
       box-sizing: content-box;
