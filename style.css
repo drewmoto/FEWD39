@@ -36,7 +36,7 @@ body {
   }
   .aboutme {
     display: inline;
-    color: white;
+    color: grey;
     font-size: 25px;
     padding: 0px 10px 0px 10px;
     text-shadow: 2px 2px 2px #ffffff;
@@ -50,7 +50,7 @@ a, a:active, a:visited {
 }
 
 a:hover{
-  color:orange;
+  color:red;
 }
 
     #leftbox {
