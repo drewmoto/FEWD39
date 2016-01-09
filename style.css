@@ -4,19 +4,19 @@ header {
     background-size: cover;
     color: rgb(255, 0, 0);
   }
-  /*a {
-    color: black;
-  }*/
 body {
   background-image: url("lights.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
   h1 {
     font-size: 70px;
-    text-shadow: 2px 2px #000066;
+    text-shadow: 2px 2px #ffffff;
   }
   h2 {
     text-align: center;
+    text-shadow: 1px 1px 10px #ffffff
   }
   img {
     margin: 40px 0px 0px 0px;
@@ -29,7 +29,7 @@ body {
   ul {
     padding: 10px;
     background: rgba(0,0,0,0.5);
-  }
+    }
   .homework {
     color: black;
   }
@@ -38,11 +38,20 @@ body {
     color: white;
     font-size: 25px;
     padding: 0px 10px 0px 10px;
-    text-shadow: 2px 2px #000066;
+    text-shadow: 2px 2px 2px #ffffff;
   }
+ol {
+  list-style-type: none;
+  text-align: center;
+}
+a, a:active, a:visited {
+  color: white;
+}
+
 a:hover{
   color:orange;
 }
+
   article {
         /*max-width: 1000px;*/
         padding: 20px;
