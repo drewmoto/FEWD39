@@ -2,11 +2,12 @@ header {
     text-align: center;
     background: url("gg-bridge.jpg");
     background-size: cover;
-    color: rgb(255, 0, 0);
+    color: rgb(63, 57, 51);
   }
 body {
   background-image: url("lights.jpg");
   background-size: 100% 100%;
+  padding: inherit;
   background-repeat: no-repeat;
 }
 
