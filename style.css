@@ -2,13 +2,21 @@ header {
     text-align: center;
     background: url("gg-bridge.jpg");
     background-size: cover;
-    color: white;
+    color: rgb(255, 0, 0);
   }
-  a {
-    color: white;
-  }
+  /*a {
+    color: black;
+  }*/
+body {
+  background-image: url("lights.jpg");
+}
+
   h1 {
     font-size: 70px;
+    text-shadow: 2px 2px #000066;
+  }
+  h2 {
+    text-align: center;
   }
   img {
     margin: 40px 0px 0px 0px;
@@ -16,6 +24,7 @@ header {
     border-radius:20px;
     max-width: 300px;
     max-width: 300px;
+    box-shadow: 10px 08px 15px #888888;
   }
   ul {
     padding: 10px;
@@ -23,24 +32,31 @@ header {
   }
   .homework {
     color: black;
-    background-color: gray;
   }
   .aboutme {
     display: inline;
+    color: white;
     font-size: 25px;
     padding: 0px 10px 0px 10px;
-        }
-    article {
-        max-width: 1000px;
+    text-shadow: 2px 2px #000066;
+  }
+a:hover{
+  color:orange;
+}
+  article {
+        /*max-width: 1000px;*/
         padding: 20px;
         margin: 0 auto;
     }
-    @media (max-width: 500px) {
-      h1 {
-          font-size: 36px;
-      }
-      li {
-          display: block;
-          padding: 5px;
-      }
+
+    #leftbox {
+      box-sizing: content-box;
+      width: 49%;
+      float:left;
+    }
+    #rightbox {
+      box-sizing: content-box;
+      width: 49%;
+      border: 0px;
+      float:right;
     }
