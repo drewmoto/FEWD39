@@ -1,0 +1,15 @@
+h2  {
+  float: left;
+}
+
+hr {
+   height: 0;
+   max-height: 0;
+}
+
+.jumbotron {
+  text-align: center;
+}
+.col-md-6 {
+  text-align: center;
+}
