@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScr Lab Excercise</title>
+  </head>
+  <style>
+    .green {
+      color: green;
+    }
+  </style>
+  <body>
+<h1>Hey There!</h1>
+
+<ul>
+  <li class="green">list item one</li>
+</ul>
+
+  </body>
+
+<script>
+//create the li element and place it in a variable
+  var listItem = document.createElement("li");
+  listItem.textContent = "My First List Item";
+  listItem.className = "green"; //assigns the "green" class to add the css styling to the listItem
+
+  //creating a new image element
+  var image = document.createElement("img");
+  image.setAttribute ("src","https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP3Q5aLcwGz8FDoTXfDGxOVGUWHFEAJ9xZNEHa7ixzQt3HyLf7u-EEfno" )
+
+  //selected the parent by callin on it using the queryselctor
+  var ul = document.querySelector("ul");
+
+  //putting the child element underneath the parent element which will place it on the webpage
+  ul.appendChild(listItem);
+  ul.appendChild(image);
+
+</script>
+
+</html>
