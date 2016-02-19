@@ -169,13 +169,15 @@ var films = [
           var h6 = document.createElement("h6");
           var img = document.createElement("img");
 
-          li.classList.add("well", "well-sm", "movie", "col-xs-12", "col-sm-6", "col-md-4");
+          li.classList.add("well", "well-sm", "movie", "element-item");
           img.setAttribute("src", films[i].Poster);
 
           var filmTitle = films[i].Title + "," + films[i].Year;
+          h3.classList.add("name")
           h3.textContent = filmTitle;
 
           var imdbRating = films[i].imdbRating;
+          h4.classList.add("imbdRating")
           h4.textContent = imdbRating;
 
           li.appendChild(h3);
@@ -185,3 +187,14 @@ var films = [
           filmList.appendChild(li);
       }
   }
+
+// ISOTOPE JS Start ==========================
+// $('.grid').isotope({
+//   // options
+//   itemSelector: '.grid-item',
+//   layoutMode: 'fitRows'
+// });
+
+
+
+// ISOTOPE JS END ==========================
