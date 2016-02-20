@@ -14,18 +14,27 @@ font-family: 'Creepster', cursive;
   text-shadow: 5px 5px rgb(80, 30, 92);;
 }
 
+.linkiso {
+  text-align: center;
+  color: #af111c;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
 .element-item { width: 33%; }
 
 .well {
   list-style: none;
   /*list-style-position:inside;*/
-  margin:0px;
-  padding:0;
+  margin:5px;
+  height: 470px;
+  width: 230px;
+  padding:0px;
   float: left;
 }
 
 .cartextsub {
-font-size: 25px;
+font-size: 30px;
 color: #333333;
 text-shadow: 2px 2px #f2f2f2;
 }

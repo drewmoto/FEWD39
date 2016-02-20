@@ -5,31 +5,31 @@ console.log('Sanity Check: script.js is working!');
 var films = [
 {
     "Title": "Aliens vs. Avatars",
-    "Year": "2011",
+    "Year": "2010",
     "Genre": "Horror, Sci-Fi",
     "Director": "Lewis Schoenbrun",
     "Actors": ["Jason Lockhart, Kim Argetsinger, Cassie Fliegel, Dylan Vox"],
     "Plot": "Six college friends find themselves caught up in a cat and mouse hunt with a race of creatures who possess the ability to transform into anything from which it has consumed DNA.",
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt1854506&apikey=1bfbc3df",
-    "imdbRating": "1.5",
+    "imdbRating": "two",
     "imdbID": "tt1854506",
 },
 {
     "Title": "Attack of the Jurassic Shark",
-    "Year": "2012",
+    "Year": "2010",
     "Genre": "Action, Horror, Sci-Fi",
     "Director": "Brett Kelly",
     "Actors": ["Emanuelle Carriere, Christine Emes, Celine Filion, Angela Parent"],
     "Country": "USA",
     "Plot": "When an oil company unwittingly unleashes a prehistoric shark from its icy prison, the Jurassic killer maroons a group of thieves and beautiful young female college students on an abandoned...",
     "Poster": "http://img.omdbapi.com/?i=tt2071491&apikey=1bfbc3df",
-    "imdbRating": "1.5",
+    "imdbRating": "one",
     "imdbID": "tt2071491",
 },
 {
     "Title": "Birdemic 2: The Resurrection",
-    "Year": "2013",
+    "Year": "2010",
     "Genre": "Action, Comedy, Horror",
     "Director": "James Nguyen",
     "Actors": ["Alan Bagh, Whitney Moore, Thomas Favaloro, Chelsea Turnbo"],
@@ -37,12 +37,12 @@ var films = [
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt1674047&apikey=1bfbc3df",
     "Metascore": "N/A",
-    "imdbRating": "1.8",
+    "imdbRating": "one",
     "imdbID": "tt1674047",
 },
 {
     "Title": "Die Hard Dracula",
-    "Year": "1998",
+    "Year": "1990",
     "Genre": "Comedy, Horror",
     "Director": "Peter Horak",
     "Actors": ["Bruce Glover, Denny Sachen, Kerry Dustin, Ernest M. Garcia"],
@@ -50,31 +50,31 @@ var films = [
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt0162930&apikey=1bfbc3df",
     "Metascore": "N/A",
-    "imdbRating": "2.0",
+    "imdbRating": "two",
     "imdbID": "tt0162930",
 },
 {
     "Title": "The Aztec Mummy Against the Humanoid Robot",
-    "Year": "1958",
+    "Year": "1960",
     "Genre": "Adventure, Horror, Sci-Fi",
     "Director": ["Rafael Portillo"],
     "Actors": "Ramón Gay, Rosita Arenas, Crox Alvarado, Luis Aceves Castañeda",
     "Plot": "A mad doctor builds a robot in order to steal a valuable Aztec treasure from a tomb guarded by a centuries old living mummy.",
     "Country": "Mexico",
     "Poster": "http://img.omdbapi.com/?i=tt0050717&apikey=1bfbc3df",
-    "imdbRating": "2.2",
+    "imdbRating": "two",
     "imdbID": "tt0050717",
 },
 {
     "Title": "The Incredibly Strange Creatures Who Stopped Living and Became Mixed-Up Zombies!!?",
-    "Year": "1964",
+    "Year": "1960",
     "Genre": "Horror",
     "Director": "Ray Dennis Steckler",
     "Actors": ["Ray Dennis Steckler, Carolyn Brandt, Brett O'Hara, Atlas King"],
     "Plot": "Jerry falls in love with a stripper he meets at a carnival. Little does he know that she is the sister of a gypsy fortune teller whose predictions he had scoffed at earlier. The gypsy turns him into a zombie and he goes on a killing spree.",
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt0057181&apikey=1bfbc3df",
-    "imdbRating": "2.2",
+    "imdbRating": "two",
     "imdbID": "tt0057181",
 },
 {
@@ -87,48 +87,48 @@ var films = [
     "Plot": "In a post-Armageddon world, a young woman finds herself in a fight for survival against mutant cavemen, dinosaurs and other prehistoric animals.",
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt0102569&apikey=1bfbc3df",
-    "imdbRating": "2.3",
+    "imdbRating": "two",
     "imdbID": "tt0102569",
 },
 {
     "Title": "The Giant Spider Invasion",
-    "Year": "1975",
+    "Year": "1970",
     "Genre": "Horror, Sci-Fi",
     "Director": "Bill Rebane",
     "Actors": ["Steve Brodie, Barbara Hale, Robert Easton, Leslie Parrish"],
     "Plot": "Giant spiders from another dimension invade Wisconsin.",
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt0073043&apikey=1bfbc3df",
-    "imdbRating": "2.8",
+    "imdbRating": "two",
     "imdbID": "tt0073043",
 },
 {
     "Title": "Jesse James Meets Frankenstein's Daughter",
-    "Year": "1966",
+    "Year": "1960",
     "Genre": "Horror, Sci-Fi, Western",
     "Director": "William Beaudine",
     "Actors": ["John Lupton, Narda Onyx, Cal Bolder, Estelita Rodriguez"],
     "Plot": "Legendary outlaw of the Old West Jesse James, on the run from Marshal MacPhee, hides out in the castle of Baron Frankenstein's granddaughter Maria, who proceeds to transform Jesse's ...",
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt0060558&apikey=1bfbc3df",
-    "imdbRating": "2.9",
+    "imdbRating": "three",
     "imdbID": "tt0060558",
 },
 {
     "Title": "The Incredible 2-Headed Transplant",
-    "Year": "1971",
+    "Year": "1970",
     "Genre": "Horror, Sci-Fi",
     "Director": "Anthony M. Lanza",
     "Actors": ["Bruce Dern, Pat Priest, Casey Kasem, Albert Cole"],
     "Plot": "Dr. Roger Girard is a rich scientist conducting experiments on head transplantation. His caretaker has a son, Danny, who, although fully grown, has the mind of child. One day an escaped ...",
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt0067245&apikey=1bfbc3df",
-    "imdbRating": "3.2",
+    "imdbRating": "three",
     "imdbID": "tt0067245",
 },
 {
     "Title": "Killer Tomatoes Strike Back!",
-    "Year": "1991",
+    "Year": "1990",
     "Genre": "Action, Comedy, Horror",
     "Director": "John De Bello",
     "Actors": ["Debi Fares, Rick Rockwell, John Witherspoon, John Astin"],
@@ -136,19 +136,19 @@ var films = [
     "Language": "English",
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt0099935&apikey=1bfbc3df",
-    "imdbRating": "3.2",
+    "imdbRating": "three",
     "imdbID": "tt0099935",
 },
 {
     "Title": "Killer Kart",
-    "Year": "2012",
+    "Year": "2010",
     "Genre": "Short, Comedy, Horror",
     "Director": "James Feeney",
     "Actors": ["Christine Alicia Rodriguez, Ray Bouchard, Elly Schaefer, Britt Michael Gordon"],
     "Plot": "The shopping cart. Four wheels, one basket, and tonight, for the closing crew of a small-town grocery store, a blood-splattered aluminum nightmare.",
     "Country": "USA",
     "Poster": "http://img.omdbapi.com/?i=tt2415470&apikey=1bfbc3df",
-    "imdbRating": "2.3",
+    "imdbRating": "two",
     "imdbID": "tt2415470",
 }
 ]
@@ -169,32 +169,22 @@ var films = [
           var h6 = document.createElement("h6");
           var img = document.createElement("img");
 
-          li.classList.add("well", "well-sm", "movie", "element-item");
+          li.classList.add("well", "well-sm", "movie", "element-item",films[i].imdbRating);
           img.setAttribute("src", films[i].Poster);
 
           var filmTitle = films[i].Title + "," + films[i].Year;
-          h3.classList.add("name")
+          h3.classList.add(films[i].Year)
           h3.textContent = filmTitle;
 
-          var imdbRating = films[i].imdbRating;
-          h4.classList.add("imbdRating")
-          h4.textContent = imdbRating;
+          // var imdbRating = films[i].imdbRating;
+          // // h4.classList.add(films[i].imdbRating)
+          // h4.textContent = imdbRating;
 
-          li.appendChild(h3);
-          li.appendChild(h4);
           li.appendChild(img);
+          li.appendChild(h3);
+          // li.appendChild(h4);
+
 
           filmList.appendChild(li);
       }
   }
-
-// ISOTOPE JS Start ==========================
-// $('.grid').isotope({
-//   // options
-//   itemSelector: '.grid-item',
-//   layoutMode: 'fitRows'
-// });
-
-
-
-// ISOTOPE JS END ==========================

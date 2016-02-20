@@ -5,12 +5,16 @@
     <title>HORRORBLE</title>
     <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
 
     <!-- <link rel="stylesheet" href="css/isotope-docs.css" media="screen" title="no title" charset="utf-8"> -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js" media="screen" title="no title" charset="utf-8">
+    <!-- <link rel="stylesheet" href="css/custom.css"> -->
 
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+    <script src="js/jquery.isotope.js" type="text/javascript"></script>
   </head>
 
     <body id="fontz">
@@ -29,7 +33,7 @@
           <ul class="nav navbar-nav">
             <li class="active headertxt"><a href="#">Home</a></li>
             <li class="headertxt"><a href="#about">About</a></li>
-            <li class="headertxt"><a href="#contact">Contact</a></li>
+            <!-- <li class="headertxt"><a href="#contact">Contact</a></li> -->
           </ul>
         </div>
         </div>
@@ -58,17 +62,17 @@
                                   </div>
                                 </div>
                                 <div class="item">
-                                  <img class="carimage2" src="http://placehold.it/600x300">
+                                  <img class="carimage1" src="img/twoheaded.jpg">
                                   <div class="carousel-caption">
-                                    <h4>Second Thumbnail label</h4>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <h4 class="cartextsub">Creating Dynamic Content via the IMDB and TWITTER API's</h4>
+                                    <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
                                   </div>
                                 </div>
                                 <div class="item">
-                                  <img class="carimage3"src="http://placehold.it/600x300">
+                                  <img class="carimage1"src="img/twoheaded.jpg">
                                   <div class="carousel-caption">
-                                    <h4>Third Thumbnail label</h4>
-                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                    <h4 class="cartextsub">THIS WAS ACCOMPLISHED BY UTILIZING THE POWER OF BOOTSTRAP, JAVASCRIPT, AND ISOTOPE</h4>
+                                    <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
                                   </div>
                                 </div>
                               </div>
@@ -76,30 +80,29 @@
                               <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
                   </div>
 
-          <div class="container col-xs-4 col-sm-6 col-md-12">
             <!-- START isotope button html   -->
-            <div class="button-group sort-by-button-group" style="text-align:center;">
-              <button class="button is-checked" data-sort-value="original-order">original order</button>
-              <button class="button" data-sort-value="name">name</button>
-              <button class="button" data-sort-value="year">year</button>
-              <button class="button" data-sort-value="imdbRating">IMDB Rating</button>
-           </div>
+            <div class="portfolioFilter linkiso">
+
+            	<a href="#" data-filter="*" class="current">All Categories</a>
+            	<!-- <a href="#" data-filter=".people">People</a>
+            	<a href="#" data-filter=".places">Places</a> -->
+              <a href="#" data-filter=".one">IMDB RATING < 1</a>
+            	<a href="#" data-filter=".two">IMDB RATING < 2</a>
+              <a href="#" data-filter=".three">IMDB RATING < 3</a>
+            	<!-- <a href="#" data-filter=".objects">Objects</a> -->
+
+            </div>
 
             <!-- END isotope button html -->
             <!-- START of div for the parent element so I can append film-list child element -->
-            <div class="">
-      					<ul class="film-list grid">
-      					<!-- <li class="well well-sm">
-      						<h3>TEST Movie Title</h3>
-      						<h4>Test Meta Data</h4>
-      						<img src="http://img.omdbapi.com/?i=tt1854506&apikey=1bfbc3df" alt=""/>
-      					</li> -->
-      					</ul>
+            <div class="portfolioContainer film-list">
+
+
       			</div>
             <!-- END of div for the parent element so I can append film-list child element -->
       		</div>
 
-            </div>
+            <!-- </div> -->
     <!-- Start of Twitter Feed HTML -->
         <div class="col-xs-12 col-sm-6 col-md-4 sidebar-offcanvas" id="sidebar">
           <div>
@@ -123,15 +126,47 @@
 
 
 <!-- ================================================== -->
+<script src="js/custom.js"></script>  <!-- custom js creating elements on the DOM and JSON data- needed -->
+
+<script type="text/javascript">
+
+$(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
+
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    });
+});
+
+</script>
+
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity=
 "sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="js/custom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-<script type="js/isotope-docs.min.js"></script>
-
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script> -->
+<script src="js/isotope-docs.min.js"></script> <!-- one two three responds with this -->
 <!-- twitter feed script -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
