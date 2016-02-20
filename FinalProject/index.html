@@ -41,11 +41,13 @@
   <div class="container">
 
     <div class="row row-offcanvas row-offcanvas-right">
-
+      <!-- navbar code -->
       <div class="col-xs-12 col-sm-6 col-md-8">
         <p class="pull-right visible-xs">
           <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
         </p>
+        <!-- navbar code -->
+        <!-- carousel code -->
         <div id="myCarousel" class="carousel slide">
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -76,18 +78,19 @@
           <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
           <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
         </div>
+        <!-- carousel code -->
 
-        <!-- START isotope button html   -->
+        <!-- START isotope link html   -->
         <div class="portfolioFilter linkiso">
 
           <a href="#" data-filter="*" class="current">All Categories</a>
-          <a href="#" data-filter=".one">IMDB RATING < 1</a>
-          <a href="#" data-filter=".two">IMDB RATING < 2</a>
-          <a href="#" data-filter=".three">IMDB RATING < 3</a>
+          <a href="#" data-filter=".one">IMDB RATING - 1</a>
+          <a href="#" data-filter=".two">IMDB RATING - 2</a>
+          <a href="#" data-filter=".three">IMDB RATING - 3</a>
 
         </div>
 
-        <!-- END isotope button html -->
+        <!-- END isotope link html -->
         <!-- START of div for the parent element so I can append film-list child element -->
         <div class="portfolioContainer film-list">
 
@@ -164,8 +167,8 @@ Then we have what will be our filter for categories and we have our click event 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="js/isotope-docs.min.js"></script>
-  <!-- twitter feed script -->
-  <script>
+
+  <script>  <!-- twitter feed script -->
     ! function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0],
         p = /^http:/.test(d.location) ? 'http' : 'https';
